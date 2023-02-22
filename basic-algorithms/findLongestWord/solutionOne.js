@@ -13,11 +13,12 @@ function findLongestWordLength(str) {
     //resets the current length when the index is a space
         currentLength = 0;
       } 
-    //incremenets the length for words  
+    //incremenets the current length for the letters of each word
       else {
         currentLength++;
       }
     }
+    //changes the current length if the current length is greater than the current longest
     if (currentLength > longestLength) {
       longestLength = currentLength;
     }
